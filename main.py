@@ -27,6 +27,9 @@ for path in args.files:
 data = json_normalize(
     [shift.to_json() for talk in parsed for shift in talk.translation_shifts]
 )
+
+data.to_csv('translation.csv')
+
 duration_by_translator = (
     data.groupby(data.name.str.lower())["talk.duration"]
     .sum()
