@@ -14,3 +14,8 @@ Export the pads you want to include as plain text and pass the paths as argument
 ./main.py pads/*.txt
 ```
 
+## Analysis
+
+You can run some analysis using the `Translation stats.ipnyb` notebook. To open it, you'll need to install the additional `jupyter` requirement.
+
+Simply open the notebook, tap **Kernel** and push **Restart & run all** to get fresh data.
